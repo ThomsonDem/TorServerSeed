@@ -10,8 +10,8 @@ read -p "insert IP : " ip
 echo " HiddenServicePort 80 $ip" >> /etc/tor/torrc
 
 echo "status"
-gnome-terminal -e services apache2 status
-gnome-terminal -e services tor status
+gnome-terminal -e service apache2 status
+gnome-terminal -e service tor status
 
 echo "our dark link: " 
 echo ".............."
